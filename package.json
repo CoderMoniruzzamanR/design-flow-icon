@@ -1,11 +1,17 @@
 {
   "name": "design-flow-icon",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "This package provides a versatile collection of icons designed for seamless integration with modern web development frameworks like React. Each icon is crafted to be lightweight, scalable, and easily customizable, ensuring they fit perfectly into your project's design language. The icons are built with accessibility in mind, offering clear and meaningful representations for a wide range of use cases.",
   "main": "dist/index.js",
   "files": [
-    "dist"
+    "dist",
+    "LICENSE",
+    "README.md"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CoderMoniruzzamanR/design-flow-icon.git"
+  },
   "exports": { 
     ".": {
       "types": "./dist/index.d.ts",
