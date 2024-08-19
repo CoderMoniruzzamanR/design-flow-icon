@@ -1,0 +1,37 @@
+{
+  "name": "design-flow-icon",
+  "version": "1.0.0",
+  "description": "This package provides a versatile collection of icons designed for seamless integration with modern web development frameworks like React. Each icon is crafted to be lightweight, scalable, and easily customizable, ensuring they fit perfectly into your project's design language. The icons are built with accessibility in mind, offering clear and meaningful representations for a wide range of use cases.",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "exports": { 
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [
+    "Scalable",
+    "Vector",
+    "Icons",
+    "Customizable",
+    "Accessible",
+    "Lightweight",
+    "Ready",
+    "for",
+    "React"
+  ],
+  "author": "moniruzzaman",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "react": "^18.3.1"
+  }
+}
