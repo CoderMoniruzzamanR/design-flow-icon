@@ -1,43 +1,22 @@
 {
   "name": "design-flow-icon",
-  "version": "1.0.2",
-  "description": "This package provides a versatile collection of icons designed for seamless integration with modern web development frameworks like React. Each icon is crafted to be lightweight, scalable, and easily customizable, ensuring they fit perfectly into your project's design language. The icons are built with accessibility in mind, offering clear and meaningful representations for a wide range of use cases.",
-  "main": "dist/index.js",
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CoderMoniruzzamanR/design-flow-icon.git"
-  },
-  "exports": { 
-    ".": {
-      "types": "./dist/index.d.ts",
-      "default": "./dist/index.js"
-    }
-  },
+  "version": "1.0.0",
+  "main": "index.js",
   "scripts": {
-    "build": "tsc"
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url .",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "Scalable",
-    "Vector",
-    "Icons",
-    "Customizable",
-    "Accessible",
-    "Lightweight",
-    "Ready",
-    "for",
-    "React"
-  ],
-  "author": "moniruzzaman",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
+  "description": "",
   "devDependencies": {
-    "typescript": "^5.5.4"
-  },
-  "peerDependencies": {
-    "react": "^18.3.1"
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "design-flow-icon": "^1.0.2",
+    "parcel": "^2.12.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
