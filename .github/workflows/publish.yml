@@ -21,6 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+      - name: Install Ruby and Jekyll dependencies
+        run: |
+          sudo apt-get install -y ruby-full build-essential zlib1g-dev
+          gem install bundler jekyll
+          bundle install
+
+      - name: Build Jekyll site
+        run: bundle exec jekyll build
+
       - name: Build
         run: npm run build
 
