@@ -24,11 +24,16 @@ jobs:
       - name: Install Ruby and Jekyll dependencies
         run: |
           sudo apt-get install -y ruby-full build-essential zlib1g-dev
-          gem install bundler jekyll
+          gem install bundler jekyll faraday-retry
           bundle install
 
+      - name: Create necessary directories
+        run: |
+          mkdir -p /github/workspace/docs/assets/css
+          touch /github/workspace/docs/assets/css/style.scss
+
       - name: Build Jekyll site
-        run: bundle exec jekyll build
+        run: bundle exec jekyll build --source /github/workspace/docs --destination /github/workspace/_site
 
       - name: Build
         run: npm run build
